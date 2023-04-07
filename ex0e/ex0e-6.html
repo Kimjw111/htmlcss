@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .child1 {
+            border: 1px solid black;
+            background-color: red;
+            color: white;
+            width: 200px;
+            height: 150px;
+
+        }
+
+        .child2 {
+            border: 1px solid black;
+            background-color: lightseagreen;
+            color: white;
+            position: relative;
+            left: 60px;
+            top: -50px;
+            opacity: 0.5;
+            width: 200px;
+            height: 150px;
+        }
+
+        .child3 {
+            border: 1px solid black;
+            background-color: dodgerblue;
+            color: white;
+            position: relative;
+            top: -60px;
+            width: 200px;
+            height: 150px;
+            left: 40px;
+            opacity: 0.5;
+            /*            z-index: ;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child1">
+            <p>박스의 크기와 위치를 잘 살펴보아야 합니다.</p>
+        </div>
+        <div class="child2">
+            <p>박스의 포지션 속성을 바꿔가며 테스트해 보아야 합니다.</p>
+        </div>
+    </div>
+    <div class="child3">
+        <p>포지션을 이해하기 위햐서는 시험해보고 관찰해 보는 것이 절대적으로 필요합니다.</p>
+    </div>
+</body></html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .header {
+            background-color: slateblue;
+            height: 50px;
+        }
+
+        .nav {
+            background-color: beige;
+            height: 50px;
+        }
+
+        .main {
+            display: flex;
+            flex: 1;
+        }
+
+        .content {
+            background-color: burlywood;
+            flex: 0.5;
+        }
+
+        .article {
+            background-color: aliceblue;
+            flex: 2;
+        }
+
+        .aside {
+            background-color: pink;
+            flex: 0.5;
+        }
+
+        .footer {
+            background-color: purple;
+            height: 50px;
+        }
+
+        .boss {
+            border: 1px solid black;
+            margin: auto;
+            height: 97%;
+            width: 97%;
+            display: flex;
+            border-radius: 10px;
+            flex-wrap: wrap;
+        }
+
+        .a {
+            border: 1px solid black;
+            margin: auto;
+            height: 45%;
+            width: 30%;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .img {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKidmGO7Ou30CKn-MEc3aYv1hkvvsB30ABuA&usqp=CAU);
+            height: 80%;
+            background-size: contain;
+            border-radius: 10px;
+            background-repeat: no-repeat;
+
+        }
+
+        .title {
+            margin: 0 0 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="nav"></div>
+        <div class="main">
+            <div class="content"></div>
+            <div class="article">
+                <div class="boss">
+                    <div class="a">
+                        <div class="img"></div>
+                        <div class="title">title1</div>
+                    </div>
+                    <div class="a">
+                        <div class="img"></div>
+                        <div class="title">title2</div>
+                    </div>
+                    <div class="a">
+                        <div class="img"></div>
+                        <div class="title">title3</div>
+                    </div>
+                    <div class="a">
+                        <div class="img"></div>
+                        <div class="title">title4</div>
+                    </div>
+                    <div class="a">
+                        <div class="img"></div>
+                        <div class="title">title5</div>
+                    </div>
+                    <div class="a">
+                        <div class="img"></div>
+                        <div class="title">title6</div>
+                    </div>
+                </div>
+            </div>
+            <div class="aside"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body></html>

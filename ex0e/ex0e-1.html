@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .header {
+            background-color: bisque;
+            height: 65px;
+        }
+
+        .nav {
+            height: 40px;
+            background-color: sandybrown;
+            padding: 0px;
+        }
+
+        .main {
+            display: flex;
+            flex: 1;
+            /*            flex-grow:1;
+            flex-shrink:1;
+            flex-basis:0;
+            */
+        }
+
+        .content {
+            background-color: honeydew;
+            flex: 3;
+        }
+
+        .aside {
+            background-color: burlywood;
+            width: 80px;
+            /*            flex: 1;*/
+        }
+
+        .footer {
+            height: 65px;
+            background-color: whitesmoke
+        }
+
+        h1 {
+            color: violet;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        table {
+            border-collapse: collapse;
+            background: url(https://gongu.copyright.or.kr/gongu/wrt/cmmn/wrtFileImageView.do?wrtSn=11288734&filePath=L2Rpc2sxL25ld2RhdGEvMjAxNS8wMi9DTFM2OS9OVVJJXzAwMV8wMjIwX251cmltZWRpYV8yMDE1MTIwMw==&thumbAt=Y&thumbSe=b_tbumb&wrtTy=10006);
+            color: white;
+            margin: 50px;
+        }
+
+        th,
+        td {
+            border: 2px solid black;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+        </div>
+        <div class="nav">
+            <form action="http://www.naver.com">
+                <label for="search">검색</label>
+                <input type="text" id="search" pattern="[가-힣]{1,10}" required>
+                <button type="submit">search</button>
+            </form>
+        </div>
+        <div class="main">
+            <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat fugiat, ut deserunt quidem asperiores! Cum illum reiciendis, numquam ratione consectetur adipisci. In dolore aliquam eum beatae placeat quos, praesentium earum nostrum dolores, quo, officiis blanditiis, commodi quia molestiae asperiores magnam modi obcaecati. Recusandae ipsa nemo velit repellendus totam veritatis ea enim quam cumque, pariatur ratione molestias sequi vero laudantium magni earum iste provident cupiditate, animi! Officia, libero ducimus, velit dolores quos harum explicabo numquam consequuntur eius dolorem neque, illum minima! Blanditiis, a nulla. Eaque labore sit autem ut iure temporibus unde ipsa quam inventore? Omnis nulla, expedita laborum fuga laudantium.
+                <table>
+                    <tr>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                    </tr>
+                    <tr>
+                        <td>김밥</td>
+                        <td>라면</td>
+                        <td>돈가스</td>
+                        <td>제육</td>
+                        <td>칼국수</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="aside">aside</div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body></html>

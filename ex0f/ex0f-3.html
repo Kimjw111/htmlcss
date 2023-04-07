@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid white;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+        }
+
+        .a {
+            border: 1px solid black;
+            height: 80px;
+            width: 80px;
+            border-radius: 50px;
+            background-color: black;
+            margin: 10px;
+            animation: myani 1s infinite alternate;
+        }
+
+        @keyframes myani {
+            0%{transform: translateY(300%)}
+            100%{transform: scaleY(0.9)}
+
+        }
+    </style>
+</head>
+<div class="container">
+    <div class="a"></div>
+</div>
+
+<body>
+</body></html>

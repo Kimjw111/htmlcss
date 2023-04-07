@@ -1,0 +1,21 @@
+
+@media(max-width:1200px){
+  body{
+    background: url(https://gongu.copyright.or.kr/gongu/wrt/cmmn/wrtFileImageView.do?wrtSn=11288734&filePath=L2Rpc2sxL25ld2RhdGEvMjAxNS8wMi9DTFM2OS9OVVJJXzAwMV8wMjIwX251cmltZWRpYV8yMDE1MTIwMw==&thumbAt=Y&thumbSe=b_tbumb&wrtTy=10006) no-repeat;
+}
+}
+@media(max-width:600px){
+  body{
+    background: url(https://png.pngtree.com/thumb_back/fh260/back_pic/03/54/06/62579986dba62df.jpg) no-repeat;
+}
+}
+
+h1{
+  border-bottom: 1px solid white;
+  padding: 10px;
+  color: yellowgreen;
+}
+span{
+  padding: 5px;
+  color: grey;
+}

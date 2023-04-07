@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .header {
+            height: 70px;
+            background-color: plum;
+            border-radius: 15px;
+            margin: 5px 0;
+        }
+
+        .main {
+            display: flex;
+            flex: 1;
+        }
+
+        .nav {
+            flex: 1;
+            background-color: bisque;
+            border-radius: 15px;
+            margin: 5px 0;
+        }
+
+        .article {
+            flex: 2;
+            background-color: beige;
+            border-radius: 15px;
+            margin: 5px;
+        }
+
+        .footer {
+            height: 70px;
+            background-color: darkgray;
+            border-radius: 15px;
+            margin: 5px 0;
+        }
+        h3{
+            margin: 10px;
+          
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 30px;
+            text-align: center;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding:0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"><h3>header</h3></div>
+        <div class="main">
+            <div class="nav"><h3>nav</h3> <br>
+                <a href="http://www.naver.com">메인</a><br>
+                <a href="http://www.naver.com">로그인</a><br>
+                <a href="http://www.naver.com">회원가입</a>
+            </div>
+            <div class="article"><h3>article</h3>
+                <table>
+                    <tr>
+                        <th>번호</th>
+                        <th>아이디</th>
+                        <th>이름</th>
+                        <th>연락처</th>
+                        <th>이메일</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>아이디1</td>
+                        <td>이름1</td>
+                        <td>010-0000-0001</td>
+                        <td>a1@b.com</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>아이디2</td>
+                        <td>이름2</td>
+                        <td>010-0000-0002</td>
+                        <td>a2@b.com</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>아이디3</td>
+                        <td>이름3</td>
+                        <td>010-0000-0003</td>
+                        <td>a3@b.com</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer"><h3>footer</h3></div>
+    </div>
+</body></html>
