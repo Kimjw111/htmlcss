@@ -1,0 +1,84 @@
+ .img {
+            width: 100%;
+            height: 280px;
+            background-color: white;
+            background:
+                url(https://cdn.eyesmag.com/content/uploads/posts/2020/10/30/newmian-46a91326-90ee-4328-ad94-eecde4adf63a.jpg), no-repeat, linear-gradient(to bottom, rgba(18, 5, 34, 0) 10%, rgba(18, 5, 34, 0.1) 60%, rgba(18, 5, 34, 0.2) 70%, rgba(18, 5, 34, 0.4) 80%, rgba(18, 5, 34, 0.8) 90%, rgba(18, 5, 34, 1) 100%)
+        }
+
+        html,
+        body {
+            overflow: hidden;
+        }
+
+        body {
+            background: #120522;
+            color: white;
+            padding: 0 10vw;
+
+        }
+
+        .login-title {
+            text-align: center;
+        }
+
+        .login-title__maintext {
+            font-size: 2.5rem;
+            color: purple;
+        }
+
+        .login-title__subtext {
+            font-size: 0.9rem;
+            font-weight: 100;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            appearance: none;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            margin: 1.5rem;
+        }
+
+        .login-form input {
+            padding: 15px 0;
+            margin: 0 10px;
+            border: none;
+            outline: none;
+            appearance: none;
+            background-color: #120522;
+            font-size: 1em;
+        }
+
+        .login-form input:not([type="submit"]) {
+            color: white;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        .login-form input:focus {
+            border-color: white;
+        }
+
+        .login-form input[type="submit"] {
+            color: white;
+            background-color: #37274b;
+            border-radius: 20px;
+            margin-top: 2rem;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .login-form input[type="submit"]:active {
+            background-color: #6644b8;
+        }
+
+        a {
+            color: azure;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
