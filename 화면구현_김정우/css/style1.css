@@ -1,0 +1,49 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    }
+.header{
+        background: pink;
+    height: 50px;
+    border-radius: 15px;
+    padding-left: 5px;
+}
+.main{
+    display: flex;
+    flex: 1;
+}
+.nav{background:beige; 
+    flex: 1;
+    height: 300px;
+    margin: 5px;
+    border-radius: 15px;
+    padding-left: 5px;
+}
+.article{
+    flex: 2;
+    background: #f4d7c7;
+    margin: 5px;
+    border-radius: 15px;
+    padding-left: 5px;
+}
+.footer{
+    height: 50px;
+    background: #e1ccf3;
+    margin: 5px;
+    border-radius: 15px;
+    padding-left:5px;
+}
+.headline,.footline,.navline,.articleline{
+    margin: 0;
+}
+table{
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid black;
+}
