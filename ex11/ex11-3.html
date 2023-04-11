@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>마이페이지 만들기 p.368</title>
+    <style>
+        @media(min-width: 768px){
+            body{padding: 0 10vw;}
+        }
+        :root {
+            --purple: #6644b8;
+            --darkpurple: #37274b;
+            --background-purple: #120522;
+            --border: rgba(255, 255, 255, 0.5);
+        }
+
+              body {
+            background: black;
+                 }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            background: black;
+        }
+
+        .user-component {
+            padding: 20px 10px;
+            flex-direction: column;
+        }
+
+        .profile,
+        .profile2 {
+            width: 6rem;
+            height: 6rem;
+            border-radius: 100px;
+            margin: 0 6px;
+        }
+
+        .id {
+            text-align: center;
+            color: white;
+            font-size: 1rem;
+            padding-top: 0.3rem;
+        }
+
+        .header {
+            color: white;
+        }
+
+        .continue-watching__images img {
+            width: 200px;
+            height: 120px;
+            border-radius: 15px;
+            object-fit: cover;
+            /*   가로세로 비율을 유지한 태로 지정한 크기 맞춤*/
+        }
+        .continue-watching{
+            margin-top: 25px;
+            padding: 0 20px;
+            padding-bottom: 10px;
+        }
+        .continue-watching__images{
+            list-style: none;
+            display: flex;
+            overflow-x: auto;
+/*           x축으로 스크롤 */
+        }
+        .continue-watching__card{
+            background: var(--darkpurple);
+                       padding: 5px;
+            border-radius: 15px;
+        }
+        .continue-watching__header{
+            margin-bottom: 15px;
+            color: white;
+        }
+        .continue-watching__images li{
+            margin-left: 5px;
+                }
+        .continue-watching__title{
+            display: block;
+            margin: 2px 0;
+            color: white;
+        }
+        .play{
+            width: 4rem;
+        }
+        .wishlist__img{
+            width: 60px;
+            height: 60px;
+            border-radius: 20px;
+        }
+        .wishlist__header{
+            border-top: 1px solid var(--border);
+            padding-top: 15px;
+            margin-bottom: 10px;
+            
+        }
+        .wishlist-item{
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--darkpurple);
+            padding: 7px;
+            border-radius: 15px;
+        }
+        .wishlist-info{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding-left: 20px;
+            color: white;
+        }
+        .wishlist__title{
+            font-size: 1.2rem;
+        }
+        .wishlist__subtitle{
+            font-size: 0.9rem;
+        }
+            </style>
+</head>
+
+<body>
+   <a href="/index.html">나가기</a>
+    <div class="container">
+        <div class="user-component">
+            <img src="https://w7.pngwing.com/pngs/98/30/png-transparent-computer-icons-overseas-development-institute-desktop-wallpaper-share-icon-avatar.png" alt="profile" class="profile">
+            <div class="id">김정우</div>
+        </div>
+        <div class="user-component">
+            <img src="https://img.lovepik.com/element/45008/7769.png_860.png" alt="profile2" class="profile2">
+            <div class="id">새 프로필</div>
+        </div>
+    </div>
+    <div class="continue-watching">
+        <p class="continue-watching__header">이어보기</p>
+        <ul class="continue-watching__images">
+            <li>
+                <div class="continue-watching__card"><img src="https://cdn.newsculture.press/news/photo/202303/519887_640005_2853.jpg" alt="스즈메"><span class="continue-watching__title">스즈메의 문단속</span></div>
+            </li>
+            <li>
+                <div class="continue-watching__card"><img src="https://upload.wikimedia.org/wikipedia/ko/7/74/%EB%AA%A8%EB%85%B8%EB%85%B8%EC%BC%80_%ED%9E%88%EB%A9%94_%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg" alt="원령"><span class="continue-watching__title">원령공주</span></div>
+            </li>
+        </ul>
+    </div>
+    <div class="wishlist">
+        <p class="wishlist__header">내가 찜한 목록</p>
+        <div class="wishlist-container">
+            <div class="wishlist-item">
+                <img src="https://upload.wikimedia.org/wikipedia/ko/7/7e/%EC%A1%B4%EC%9C%85_%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg" alt="존윅" class="wishlist__img">
+                <div class="wishlist-info"><span class="wishlist__title">존윅</span><span class="wishlist__subtitle">액션</span></div>
+                <div><img src="https://cdn-icons-png.flaticon.com/512/260/260446.png" alt="play" class="play"></div>
+            </div>
+            <div class="wishlist-item">
+                <img src="https://t1.daumcdn.net/movie/0357a82b7226464b87072c0b8d2246b71567986846719" alt="조커" class="wishlist__img">
+                <div class="wishlist-info"><span class="wishlist__title">조커</span><span class="wishlist__subtitle">범죄,스릴러</span></div><div><img src="https://cdn-icons-png.flaticon.com/512/260/260446.png" alt="play" class="play"></div>
+            </div>
+            <div class="wishlist-item">
+                <img src="https://upload.wikimedia.org/wikipedia/ko/b/bc/%EC%84%BC%EA%B3%BC_%EC%B9%98%ED%9E%88%EB%A1%9C%EC%9D%98_%ED%96%89%EB%B0%A9%EB%B6%88%EB%AA%85_%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg" alt="센" class="wishlist__img">
+                <div class="wishlist-info"><span class="wishlist__title">센과 치히로의 행방불명</span><span class="wishlist__subtitle">애니메이션,판타지</span></div><div><img src="https://cdn-icons-png.flaticon.com/512/260/260446.png" alt="play" class="play"></div>
+            </div>
+        </div>
+    </div>
+</body></html>

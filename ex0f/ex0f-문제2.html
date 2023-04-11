@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        :root{
+            --blue:#e254d8;
+            --beige:#f8e6b9;
+            --browne:#e2c187;
+            --white:#e4e7fa;
+            --pink:#edb0e0;
+            --purple:#b054e2
+                    }
+        .wrap {
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr 1fr;
+            grid-template-rows:100px 100px 300px 100px;
+        }
+
+        div {
+            margin: 3px;
+            border: 1px solid #ccc;
+        }
+        .head{background: var(--blue);grid-column-start: 1;
+            grid-column-end: 5;
+            
+        }
+        .nav{background: var(--beige);
+        grid-column-start:1;grid-column-end: 5;
+        grid-row-start: 2; grid grid-row-end: 3;}
+        .a1{background: var(--browne);
+        grid-column-start: 1;grid-column-end: 2;
+            grid-row-start: 3; grid-row-end: 4;
+        }
+        .a2{background: var(--white);grid-column-start: 2;grid-column-end: 4;
+        grid grid-row-start: 3; grid-row-end:4; }
+        .a3{background: var(--pink);grid-column-start: 4;grid-column-end: 5;
+        grid-row-start: 3; grid-row-end: 4;}
+        .foot{background: var(--purple);grid-column-start: 1;grid-column-end: 5;
+        grid-row-start: 4; grid-row-end: 5;}
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="head"></div>
+        <div class="nav"></div>
+        <div class="a1"></div>
+        <div class="a2"></div>
+        <div class="a3"></div>
+        <div class="foot"></div>
+    </div>
+</body></html>
